@@ -4,6 +4,12 @@ Ce dépôt rassemble une sélection de livrables réalisés dans le cadre du par
 
 Les projets illustrent un parcours progressif : analyse avec Excel et SQL, qualité des données avec Python, conception de tableaux de bord Power BI, analyse de marché et amélioration d’un projet data avec l’intelligence artificielle.
 
+## Portfolio
+
+➡️ [Consulter le portfolio complet](Portfolio/README.md)
+
+Le portfolio présente mon profil, mes compétences, ma certification et l’ensemble des projets selon un fil conducteur commun : **contexte → besoin métier → démarche → résultats → impact et recommandations**.
+
 ## Certification
 
 **Microsoft Certified: Power BI Data Analyst Associate (PL-300)** — [Vérifier la certification sur Microsoft Learn](https://learn.microsoft.com/api/credentials/share/fr-fr/KOUAKOUDavies-7415/1BAB61874B09A375?sharingId=5CEFCDDFB0F5A15B)
