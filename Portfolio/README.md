@@ -1,6 +1,6 @@
 # Portfolio — Business Intelligence & Data Analyst
 
-Bienvenue dans mon portfolio. Il présente un parcours progressif en analyse de données, de la préparation des sources jusqu’à la restitution décisionnelle.
+Bienvenue dans ce portfolio. Il présente un parcours progressif en analyse de données, de la préparation des sources jusqu’à la restitution décisionnelle.
 
 ## Profil
 
@@ -69,7 +69,7 @@ Chaque projet est présenté selon un fil conducteur commun :
 
 **Contexte → besoin métier → démarche → résultats → impact et recommandations**
 
-Cette structure facilite une lecture rapide par un recruteur tout en donnant accès aux livrables techniques.
+Cette structure facilite une lecture rapide tout en donnant accès aux livrables techniques.
 
 ---
 
