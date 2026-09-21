@@ -61,9 +61,7 @@ Croisement de données de marché et de signaux d’engagement, analyses PESTEL 
 
 ### [Projet 11 — Augmenter un projet data avec l’IA](../OpenClassrooms/Projet_11)
 
-Comparaison encadrée de ChatGPT, Copilot et DeepSeek sur douze essais. La série finale repose sur un même prompt, un même export texte du notebook et une grille fondée sur la pertinence, la criticité, l’actionnabilité et la traçabilité.
-
-Sur cette série contrôlée, ChatGPT obtient 4,00/4, Copilot 3,60/4 et DeepSeek 3,42/4. ChatGPT est retenu pour la revue approfondie, Copilot pour un premier contrôle rapide et DeepSeek pour une seconde lecture à filtrer. Toute amélioration reste soumise à une validation humaine et à une exécution du notebook sur un noyau neuf.
+Comparaison encadrée de ChatGPT, Copilot et DeepSeek pour l'amélioration d'un notebook.
 
 ## Démarche
 
