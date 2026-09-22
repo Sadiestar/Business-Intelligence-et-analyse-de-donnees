@@ -45,7 +45,7 @@ Actions opérationnelles :
 - Moyen terme : ajouter des contraintes de validation dans l’ERP, automatiser la synchronisation stock, réconciliation mensuelle Web/ERP.
 - Long terme : outil de dataviz en temps réel, alertes automatiques, unification des référentiels produits.
 
-## Livrable
+## Livrables
 
 - [Notebook Python](./notebook_bottleneck.ipynb)
 - [Présentation](./Presentation_Bottleneck.pdf)
