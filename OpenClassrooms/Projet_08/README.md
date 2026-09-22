@@ -4,7 +4,7 @@
 
 ## Contexte
 
-Un jeu de données doit être exploré afin de comprendre les phénomènes observés et d’en restituer les principaux enseignements.
+Dans le cadre de l’analyse des transactions immobilières parisiennes (2017-2021), l’entreprise « Les Plus Beaux Logis de Paris » souhaite exploiter ses données historiques pour mieux comprendre la structure de son portefeuille d’actifs et estimer la valeur de ses biens. L’analyse est réalisée en Python, en mobilisant des techniques de machine learning.
 
 ## Besoin métier
 
