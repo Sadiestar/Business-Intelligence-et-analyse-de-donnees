@@ -29,32 +29,33 @@ Dans le cadre de l’analyse des transactions immobilières parisiennes (2017-20
 
 Partie 1 – Prédiction de la valeur foncière :
 
-Excellente performance : Coefficient de détermination 
-R
-2
-=
-0
-,
-986
-R 
-2
- =0,986.
-
-Erreur moyenne relative inférieure à 10 %, rendant les prédictions fiables et robustes.
-
-Valorisation du portefeuille : Au 31 décembre 2022, la valeur totale estimée s’élève à environ 169 M€ (56 % de biens particuliers, 44 % de biens professionnels).
+- Excellente performance : Coefficient de détermination R² = 0,986
+- Erreur moyenne relative inférieure à 10 %, rendant les prédictions fiables et robustes.
+- Valorisation du portefeuille : Au 31 décembre 2022, la valeur totale estimée s’élève à environ 169 M€ (56 % de biens particuliers, 44 % de biens professionnels).
 
 Partie 2 – Classification des biens :
 
-Les variables « nombre de pièces principales » et « prix au m² » sont les plus discriminantes.
-
-Taux de correspondance élevé : 91,27 % pour la distinction appartements / locaux commerciaux.
-
-K-Means est un bon outil d’exploration et de segmentation, mais ne remplace pas l’expertise métier.
+- Les variables « nombre de pièces principales » et « prix au m² » sont les plus discriminantes.
+- Taux de correspondance élevé : 91,27 % pour la distinction appartements / locaux commerciaux.
+- K-Means est un bon outil d’exploration et de segmentation, mais ne remplace pas l’expertise métier.
 
 ## Impact / recommandations
 
-La démarche rend l’analyse vérifiable et réutilisable. Il est recommandé de conserver les hypothèses, les limites et les contrôles dans toute future actualisation.
+Impact :
+
+- Ces modèles constituent des outils d’aide à la décision pour l’estimation et la segmentation du portefeuille immobilier.
+
+Limites identifiées :
+
+- La régression linéaire suppose une relation linéaire (simplificatrice dans l’immobilier) et est sensible aux valeurs aberrantes.
+- Certaines variables importantes ne sont pas prises en compte (état du bien, étage, travaux, environnement, etc.).
+- Le modèle est entraîné sur des données passées (2017-2021) et peut perdre en fiabilité si le marché évolue.
+
+Recommandations :
+
+- Interpréter les résultats avec prudence et les confronter systématiquement à l’expertise métier.
+- Enrichir le modèle avec des variables explicatives supplémentaires (état du bien, performance énergétique, etc.).
+- Intégrer des données plus récentes pour maintenir la fiabilité des analyses et des prédictions.
 
 ## Livrables
 
