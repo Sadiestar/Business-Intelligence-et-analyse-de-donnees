@@ -29,3 +29,4 @@ L’analyse améliore la confiance accordée aux données et facilite l’identi
 ## Livrable
 
 - [Notebook Python](./notebook_bottleneck.ipynb)
+- [Présentation](./notebook_bottleneck.ipynb)
