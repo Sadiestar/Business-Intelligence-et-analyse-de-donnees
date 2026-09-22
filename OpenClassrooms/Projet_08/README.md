@@ -12,11 +12,16 @@ Produire une analyse structurée, fiable et compréhensible, capable d’éclair
 
 ## Démarche
 
-- exploration et préparation des données ;
-- contrôles de qualité ;
-- analyses statistiques ;
-- création de visualisations ;
-- interprétation et mise en perspective des résultats.
+1. Préparation des données :
+
+- Nettoyage et préparation des données de transactions (2017-2021).
+- Encodage des variables catégorielles (One-Hot Encoding).
+- Séparation des données : 70 % pour l’entraînement, 30 % pour le test.
+
+2. Modélisation :
+
+- Partie 1 – Modèle prédictif (Régression linéaire) : Prédiction de la valeur foncière à partir de la surface réelle, de l’arrondissement, du type de bien et de la date de transaction.
+- Partie 2 – Modèle de classification (K-Means) : Regroupement des biens en 2 clusters pour distinguer les appartements des locaux commerciaux, avec standardisation des variables (StandardScaler).
 
 ## Résultats
 
