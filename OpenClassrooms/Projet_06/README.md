@@ -35,9 +35,9 @@ Bottleneck, boutique de vins et spiritueux, dispose de données extraites au 31 
 
 ## Impact / recommandations
 
-Axe 1 – Recentrer le catalogue : déréférencer les produits à faible CA, volume et marge ; concentrer les efforts sur les produits performants.
-Axe 2 – Piloter la rentabilité : définir un seuil minimum de marge, revoir le pricing (notamment Champagne) et segmenter l’offre.
-Axe 3 – Optimiser les stocks : fixer des seuils de 2 à 4 mois max, réduire les surstocks, prioriser les produits à forte rotation, mettre en place des alertes surstock/rupture.
+- Axe 1 – Recentrer le catalogue : déréférencer les produits à faible CA, volume et marge ; concentrer les efforts sur les produits performants.
+- Axe 2 – Piloter la rentabilité : définir un seuil minimum de marge, revoir le pricing (notamment Champagne) et segmenter l’offre.
+- Axe 3 – Optimiser les stocks : fixer des seuils de 2 à 4 mois max, réduire les surstocks, prioriser les produits à forte rotation, mettre en place des alertes surstock/rupture.
 
 Actions opérationnelles :
 
