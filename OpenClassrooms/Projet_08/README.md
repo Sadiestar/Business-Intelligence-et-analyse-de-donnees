@@ -27,7 +27,30 @@ Dans le cadre de l’analyse des transactions immobilières parisiennes (2017-20
 
 ## Résultats
 
-Le notebook conserve l’ensemble du raisonnement analytique, tandis que la présentation synthétise les constats pour un public métier.
+Partie 1 – Prédiction de la valeur foncière :
+
+Excellente performance : Coefficient de détermination 
+R
+2
+=
+0
+,
+986
+R 
+2
+ =0,986.
+
+Erreur moyenne relative inférieure à 10 %, rendant les prédictions fiables et robustes.
+
+Valorisation du portefeuille : Au 31 décembre 2022, la valeur totale estimée s’élève à environ 169 M€ (56 % de biens particuliers, 44 % de biens professionnels).
+
+Partie 2 – Classification des biens :
+
+Les variables « nombre de pièces principales » et « prix au m² » sont les plus discriminantes.
+
+Taux de correspondance élevé : 91,27 % pour la distinction appartements / locaux commerciaux.
+
+K-Means est un bon outil d’exploration et de segmentation, mais ne remplace pas l’expertise métier.
 
 ## Impact / recommandations
 
