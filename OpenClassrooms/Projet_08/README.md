@@ -8,7 +8,9 @@ Dans le cadre de l’analyse des transactions immobilières parisiennes (2017-20
 
 ## Besoin métier
 
-Produire une analyse structurée, fiable et compréhensible, capable d’éclairer une décision ou une orientation métier.
+- Estimer la valeur foncière d’un bien immobilier à partir de ses caractéristiques (surface, localisation, type, etc.).
+- Mieux comprendre la composition du portefeuille d’actifs immobiliers.
+- Segmenter les biens pour distinguer les appartements des locaux commerciaux et identifier des profils d’investissement.
 
 ## Démarche
 
