@@ -4,7 +4,7 @@
 
 ## Contexte
 
-Une organisation souhaite mieux comprendre ses données grâce à un support d’analyse accessible aux équipes métier.
+Une équipe de basket-ball désire mieux saisir ses performances au moyen d’un outil d’analyse simple d’accès pour l’entraîneur.
 
 ## Besoin métier
 
