@@ -27,5 +27,5 @@ La solution améliore l’accès à l’information et fournit une base simple p
 
 ## Livrables
 
-- [Rapport d’analyse Excel](./1_rapport_d'analyse_022026.xlsx)
+- [Rapport d’analyse Excel](./Rapport_d'analyse.xlsx)
 - [Présentation PDF](./Présentation_coach.pdf)
