@@ -8,7 +8,7 @@ Les projets illustrent un parcours progressif : analyse avec Excel et SQL, quali
 
 ➡️ [Consulter le portfolio complet](Portfolio/README.md)
 
-Le portfolio présente mon profil et les compétences acquises durant cette formation. L’ensemble des projets est présenté selon un fil conducteur commun : **contexte → besoin métier → démarche → résultats → impact et recommandations**.
+Le portfolio présente les compétences acquises durant cette formation. Les différents projets s’inscrivent dans un fil conducteur commun : **contexte → besoin métier → démarche → résultats → impact et recommandations**.
 
 ## Certification
 
