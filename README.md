@@ -24,7 +24,7 @@ Le portfolio présente les compétences acquises durant cette formation. Les dif
 | P5 | Suivre la satisfaction client avec SQL | [Projet 05](OpenClassrooms/Projet_05) |
 | P6 | Nettoyer et analyser des données avec Python | [Projet 06](OpenClassrooms/Projet_06) |
 | P7 | Concevoir un tableau de bord de pilotage avec Power BI | [Projet 07](OpenClassrooms/Projet_07) |
-| P8 | Réaliser une analyse statistique avec Python | [Projet 08](OpenClassrooms/Projet_08) |
+| P8 | Effectuer une analyse statistique en Python en intégrant du machine learning | [Projet 08](OpenClassrooms/Projet_08) |
 | P9 | Relier performance commerciale, stocks et rentabilité | [Projet 09](OpenClassrooms/Projet_09) |
 | P10 | Analyser un marché et recommander un segment | [Projet 10](OpenClassrooms/Projet_10) |
 | P11 | Améliorer un projet data avec l’IA et assurer une veille | [Projet 11](OpenClassrooms/Projet_11) |
