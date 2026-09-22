@@ -4,27 +4,52 @@
 
 ## Contexte
 
-Une organisation souhaite mieux comprendre la satisfaction de ses clients et suivre son évolution à partir des données disponibles.
+BestMarket souhaite améliorer la qualité de son service en analysant les retours clients issus de plusieurs canaux (réseaux sociaux, application mobile, téléphone, email). Une base dédiée centralise 3 000 retours client afin d’évaluer la satisfaction, identifier les axes d’amélioration et mesurer la performance via des indicateurs clés.
 
 ## Besoin métier
 
-Clarifier les attentes, définir des indicateurs pertinents et produire une analyse utilisable pour orienter les actions d’amélioration.
+- Mesurer le nombre de retours, les notes moyennes, le taux de recommandation et le Net Promoter Score (NPS).
+- Analyser les données par typologie / catégorie produit, département, source de retour, jour et mois.
+- Répondre à 17 questions métier (livraison, SAV, drive, réseaux sociaux, boissons, etc.).
+- Identifier les magasins et produits sous-performants et les leviers d’amélioration.
 
 ## Démarche
 
-- formalisation de l’expression du besoin ;
-- identification des données nécessaires ;
-- définition des indicateurs de satisfaction ;
-- préparation des requêtes SQL et des règles de calcul ;
-- organisation de la restitution.
-
+1. Analyse du besoin et définition des indicateurs attendus.
+2. Complétude de la base : création d’une base SQLite, exécution du script SQL, import des fichiers CSV (ref_magasin.csv, etc.).
+3. Mise à jour du schéma relationnel et du dictionnaire de données : tables retour_client, produit, magasin.
+4. Contrôle qualité et cohérence : vérification des jointures, absence de doublons, notes non nulles, associations produit/magasin.
+5. Rédaction des requêtes SQL répondant aux questions métier et aux axes complémentaires (NPS par produit, magasin, service, canal).
+   
 ## Résultats
 
-L’expression du besoin établit un cadre partagé pour construire le suivi et interpréter les futurs résultats de manière cohérente.
+- Base opérationnelle : 3 000 retours clients, 4 catégories de produits, 84 magasins.
+- Indicateurs globaux :
+  - Taux de recommandation : 70,5 %
+  - NPS global : 30,97
+  - Promoteurs : 1 200 / Passifs : 1 529 / Détracteurs : 271
+
+- NPS par source : téléphone (33,81) > email (29,65) > réseaux sociaux (29,56).
+- NPS par service : qualité produit (35,03) > SAV (31,51) > livraison (31,14) > drive (29,62) > expérience en magasin (27,34).
+- Classements : top 5 magasins par note, départements les mieux notés, typologies produits avec le meilleur SAV (Loisirs, High-Tech).
+- Analyses complémentaires :
+  - Le volume de retours n’influence pas significativement la satisfaction.
+  - Le canal d’expression a un impact modéré.
+  - La satisfaction dépend davantage de l’expérience (magasin, SAV, livraison, drive) que du produit lui-même.
 
 ## Impact / recommandations
 
-Le cadrage réduit les ambiguïtés et facilite le passage de la demande métier à la solution analytique. Il est recommandé de documenter chaque indicateur et de fixer une fréquence de suivi.
+Impact :
+
+- Les analyses fournissent une vision claire de la satisfaction client et des disparités entre magasins, produits et canaux.
+- Elles permettent de prioriser les actions correctives et d’objectiver les décisions.
+
+Recommandations :
+
+- Produits : capitaliser sur les produits leaders (mise en avant, extension de gamme), améliorer le cœur de gamme et sécuriser les produits faibles.
+- Magasins : identifier et diffuser les bonnes pratiques des magasins performants, accompagner les magasins en difficulté (formation, pilotage local), mettre en place un suivi NPS par magasin.
+- Expérience client : homogénéiser les performances magasins, renforcer les équipes SAV sur les périodes de forte activité, améliorer l’expérience en magasin (principal point faible).
+- Données : enrichir la base avec la dimension magasin (nom, localisation) et les retours via application mobile pour affiner les analyses.
 
 ## Livrable
 
