@@ -59,5 +59,5 @@ Recommandations :
 
 ## Livrables
 
-- [Notebook Python](./Notebook.ipynb)
+- [Notebook Python](./NotebookP8.ipynb)
 - [Présentation PDF](./Presentation.pdf)
