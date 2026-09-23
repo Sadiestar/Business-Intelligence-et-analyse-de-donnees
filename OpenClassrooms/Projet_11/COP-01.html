@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Collecte de l’essai COP-01</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; max-width: 1100px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+  h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.8em; margin-bottom: 0.6em; }
+  h1 { border-bottom: 2px solid #ddd; padding-bottom: 0.3em; }
+  h2 { border-bottom: 1px solid #eee; padding-bottom: 0.2em; }
+  blockquote { border-left: 4px solid #ccc; margin-left: 0; padding-left: 1em; color: #555; background: #f9f9f9; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.95em; }
+  th, td { border: 1px solid #ccc; padding: 0.5em; vertical-align: top; text-align: left; }
+  th { background: #f0f0f0; }
+  code { background: #f5f5f5; padding: 0.1em 0.3em; border-radius: 3px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; }
+  pre { background: #f5f5f5; padding: 1em; overflow-x: auto; border-radius: 4px; border: 1px solid #ddd; }
+  pre code { background: none; padding: 0; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 2em 0; }
+  .note { background: #fff8e1; border-left: 4px solid #ffc107; padding: 0.8em 1em; margin: 1em 0; }
+</style>
+</head>
+<body>
+
+<h1>Collecte de l’essai COP-01</h1>
+
+<blockquote>
+<p><strong>Statut :</strong> Vérifié — réponse initiale collectée et contrôlée statiquement.</p>
+</blockquote>
+
+<hr>
+
+<h2>Métadonnées à compléter</h2>
+
+<table>
+<thead>
+<tr><th>Champ</th><th>Valeur</th></tr>
+</thead>
+<tbody>
+<tr><td>Assistant</td><td>Copilot</td></tr>
+<tr><td>Répétition</td><td>1</td></tr>
+<tr><td>Date et heure locale</td><td>13/09/2026 à 9h25</td></tr>
+<tr><td>Interface et version si connue</td><td></td></tr>
+<tr><td>Modèle affiché (sinon « non exposé »)</td><td>M365 Copilot basé sur le modèle GPT-5 chat.</td></tr>
+<tr><td>Mode / raisonnement / outils activés</td><td></td></tr>
+<tr><td>Fichier envoyé et version (ou empreinte SHA-256)</td><td>Notebook_042026_test_reference</td></tr>
+<tr><td>Format transmis</td><td>txt</td></tr>
+<tr><td>Prompt</td><td><code>prompt_test_v1.txt</code> + « La pièce jointe contient les sources de 111 cellules : 107 cellules de code et 4 cellules Markdown. Les sorties enregistrées et les images sont exclues. Analyse le code des graphiques, mais ne prétends pas avoir vérifié leur rendu ni les résultats numériques. »</td></tr>
+<tr><td>Contenu complet déclaré accessible par l’assistant</td><td>oui</td></tr>
+<tr><td>Durée première réponse en secondes (chronomètre)</td><td>32</td></tr>
+<tr><td>Nombre de relances après le premier envoi</td><td></td></tr>
+<tr><td>Temps de vérification humaine en minutes</td><td></td></tr>
+<tr><td>Tokens / coût observé, si disponible (sinon « non mesuré »)</td><td>~ 20 000 - 30 000 tokens</td></tr>
+<tr><td>Lien privé de conversation, si disponible (facultatif)</td><td></td></tr>
+<tr><td>Captures et fichiers générés (chemins locaux)</td><td></td></tr>
+<tr><td>Incident ou différence de contexte</td><td></td></tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>Prompt effectivement envoyé</h2>
+
+<pre><code>« identique à prompt_test_v1.txt » +
+La pièce jointe contient les sources de 111 cellules :
+107 cellules de code et 4 cellules Markdown.
+Les sorties enregistrées et les images sont exclues.
+Analyse le code des graphiques, mais ne prétends pas avoir vérifié
+leur rendu ni les résultats numériques.
+</code></pre>
+
+<hr>
+
+<h2>Réponse initiale intégrale</h2>
+
+<h3>Vérification préalable des sources accessibles</h3>
+
+<p><strong>Fichier accessible :</strong></p>
+
+<p><code>notebook_reference_complet.txt</code></p>
+
+<p><strong>Contenu réellement disponible :</strong></p>
+
+<ul>
+<li>Export source complet du notebook.</li>
+<li>111 cellules au total.</li>
+<li>107 cellules de code.</li>
+<li>4 cellules Markdown.</li>
+<li>Les sorties enregistrées, images, graphiques rendus et pièces jointes sont explicitement exclus.</li>
+</ul>
+
+<p><strong>Limites de lecture :</strong></p>
+
+<ul>
+<li>Je peux analyser l'intégralité du code source fourni.</li>
+<li>Je ne peux pas vérifier les résultats numériques, les graphiques affichés, les DataFrames réels ou les performances d'exécution.</li>
+<li>Je ne peux pas confirmer le contenu des fichiers Excel (<code>web.xlsx</code>, <code>erp.xlsx</code>, <code>liaison.xlsx</code>).</li>
+<li>Je ne peux pas vérifier les effets réels des jointures, conversions de types ou filtrages sans exécuter le notebook.</li>
+<li>Je n'ai pas analysé le Web conformément à votre consigne.</li>
+</ul>
+
+<hr>
+
+<h3>Revue technique</h3>
+
+<h4>A. Problèmes directement observables dans le code</h4>
+
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Gravité</th>
+<th>Cellule ou extrait précis</th>
+<th>Justification</th>
+<th>Correction proposée</th>
+<th>Vérification à réaliser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Historique d'exécution non séquentiel</td>
+<td>Moyenne</td>
+<td>Cellule 10 exécutée n°107 avant des cellules exécutées n°6-106</td>
+<td>Indique que le notebook n'a pas été exécuté intégralement depuis un noyau propre</td>
+<td>Redémarrer le noyau et exécuter tout</td>
+<td>Vérifier qu'aucune cellule ne dépend d'un état intermédiaire</td>
+</tr>
+<tr>
+<td>Imports dispersés</td>
+<td>Faible</td>
+<td>Cellules 6, 66, 107</td>
+<td>Les dépendances ne sont pas centralisées</td>
+<td>Regrouper tous les imports en début de notebook</td>
+<td>Réexécuter depuis un noyau vierge</td>
+</tr>
+<tr>
+<td>Erreur dans la liste des colonnes à supprimer</td>
+<td>Élevée</td>
+<td>Cellule 32</td>
+<td>Absence de virgule entre <code>"post_author"</code> et <code>"post_modified"</code> provoquant une concaténation implicite en chaîne unique</td>
+<td>Ajouter la virgule manquante</td>
+<td>Contrôler les colonnes réellement supprimées</td>
+</tr>
+<tr>
+<td>Modification de DataFrame par référence</td>
+<td>Élevée</td>
+<td>Cellule 69 : <code>df_z = df_final</code></td>
+<td>Toute modification de <code>df_z</code> modifie également <code>df_final</code></td>
+<td>Utiliser <code>df_z = df_final.copy()</code></td>
+<td>Vérifier que <code>df_final</code> reste inchangé</td>
+</tr>
+<tr>
+<td>Modification de DataFrame par référence</td>
+<td>Élevée</td>
+<td>Cellule 79 : <code>df_ca = df_final</code></td>
+<td>Ajout de colonne directement dans <code>df_final</code> de manière implicite</td>
+<td>Utiliser <code>copy()</code></td>
+<td>Contrôler les colonnes finales attendues</td>
+</tr>
+<tr>
+<td>Variable créée mais non exportée</td>
+<td>Élevée</td>
+<td>Cellule 109</td>
+<td><code>df_analyse_final</code> est créé mais <code>df_final.xlsx</code> est exporté depuis <code>df_final</code></td>
+<td>Exporter <code>df_analyse_final</code></td>
+<td>Comparer le fichier exporté aux données attendues</td>
+</tr>
+<tr>
+<td>Variables arrondies avant calcul IQR</td>
+<td>Moyenne</td>
+<td>Cellule 74</td>
+<td>Q3 et IQR sont arrondis avant calcul des bornes</td>
+<td>Calculer les bornes sur les valeurs non arrondies</td>
+<td>Comparer les seuils obtenus</td>
+</tr>
+<tr>
+<td>Commentaire incohérent avec le code</td>
+<td>Moyenne</td>
+<td>Cellule 91</td>
+<td>Le commentaire parle de quantités vendues mais le tri utilise <code>stock_quantity</code></td>
+<td>Utiliser <code>total_sales</code> ou corriger le commentaire</td>
+<td>Vérifier l'objectif métier</td>
+</tr>
+<tr>
+<td>Dernière cellule vide dans le notebook d'origine mentionnée dans le Markdown</td>
+<td>Faible</td>
+<td>Documentation initiale</td>
+<td>N'apporte aucune valeur</td>
+<td>Supprimer la cellule</td>
+<td>Contrôle de propreté du notebook</td>
+</tr>
+<tr>
+<td>Utilisation répétée de <code>display.max_rows=None</code></td>
+<td>Faible</td>
+<td>Cellule 7</td>
+<td>Peut générer des sorties massives et peu lisibles</td>
+<td>Limiter l'affichage</td>
+<td>Vérifier la lisibilité globale</td>
+</tr>
+</tbody>
+</table>
+
+<h4>B. Risques nécessitant une exécution pour être confirmés</h4>
+
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Gravité</th>
+<th>Cellule ou extrait précis</th>
+<th>Justification</th>
+<th>Correction proposée</th>
+<th>Vérification à réaliser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conversion de <code>total_sales</code> en entier</td>
+<td>Moyenne</td>
+<td>Cellule 65</td>
+<td>Échec possible si présence de valeurs manquantes</td>
+<td>Utiliser contrôle préalable des NaN</td>
+<td>Vérifier le nombre de NaN avant conversion</td>
+</tr>
+<tr>
+<td>Conversion de <code>id_web</code> en entier</td>
+<td>Moyenne</td>
+<td>Cellules 58 et 65</td>
+<td>Peut échouer si une valeur inattendue subsiste</td>
+<td>Contrôle d'intégrité avant <code>astype(int)</code></td>
+<td>Vérifier l'absence totale de valeurs invalides</td>
+</tr>
+<tr>
+<td>Jointure ERP → Liaison</td>
+<td>Élevée</td>
+<td>Cellule 61</td>
+<td>Risque de pertes ou duplications de lignes</td>
+<td>Contrôler cardinalités avant fusion</td>
+<td>Comparer nombre de lignes avant/après</td>
+</tr>
+<tr>
+<td>Jointure Liaison → Web</td>
+<td>Élevée</td>
+<td>Cellule 63</td>
+<td>Absence de validation de cardinalité</td>
+<td>Utiliser <code>validate=</code> dans <code>merge</code></td>
+<td>Vérifier les duplications éventuelles</td>
+</tr>
+<tr>
+<td>Filtrage des SKU</td>
+<td>Moyenne</td>
+<td>Cellules 37 à 46</td>
+<td>Risque d'exclure des références légitimes</td>
+<td>Documenter les exclusions</td>
+<td>Mesurer l'impact ligne par ligne</td>
+</tr>
+<tr>
+<td>Calcul des outliers par Z-score</td>
+<td>Moyenne</td>
+<td>Cellules 69 à 72</td>
+<td>Sensible à la non-normalité des prix</td>
+<td>Comparer avec méthode IQR</td>
+<td>Vérifier la distribution réelle</td>
+</tr>
+<tr>
+<td>Calcul du taux de marge</td>
+<td>Moyenne</td>
+<td>Cellule 103</td>
+<td>Hypothèse implicite d'une TVA à 20 %</td>
+<td>Paramétrer ou documenter cette hypothèse</td>
+<td>Vérifier la règle métier</td>
+</tr>
+<tr>
+<td>Rotation de stock</td>
+<td>Moyenne</td>
+<td>Cellule 99</td>
+<td>La formule utilisée est un ratio stock/ventes et non un véritable calcul de mois de stock</td>
+<td>Définir clairement l'indicateur</td>
+<td>Valider avec les métiers</td>
+</tr>
+</tbody>
+</table>
+
+<h4>C. Éléments impossibles à évaluer avec les fichiers fournis</h4>
+
+<table>
+<thead>
+<tr><th>Sujet</th><th>Limite</th></tr>
+</thead>
+<tbody>
+<tr><td>Exactitude des résultats numériques</td><td>Impossible sans exécution</td></tr>
+<tr><td>Qualité réelle des données Excel</td><td>Fichiers non fournis</td></tr>
+<tr><td>Présence réelle de doublons après nettoyage</td><td>Nécessite les données</td></tr>
+<tr><td>Validité métier des corrections appliquées</td><td>Nécessite connaissance métier et données</td></tr>
+<tr><td>Rendu des graphiques Plotly et Matplotlib</td><td>Images absentes</td></tr>
+<tr><td>Temps d'exécution</td><td>Impossible à mesurer</td></tr>
+<tr><td>Qualité visuelle des exports Excel</td><td>Export non fourni</td></tr>
+<tr><td>Effets réels des jointures</td><td>Impossible sans données</td></tr>
+</tbody>
+</table>
+
+<hr>
+
+<h3>Analyse par thème</h3>
+
+<h4>1. Ordre logique des cellules</h4>
+
+<p><strong>Points positifs :</strong></p>
+<ul>
+<li>Flux global cohérent : chargement → nettoyage → fusion → analyses → export.</li>
+<li>Les transformations progressent de manière logique.</li>
+</ul>
+
+<p><strong>Points faibles :</strong></p>
+<ul>
+<li>Historique d'exécution non linéaire (cellule 10 exécutée avec compteur 107).</li>
+<li>Certains indicateurs dépendent de colonnes créées indirectement à travers des alias (<code>df_ca = df_final</code>).</li>
+</ul>
+
+<h4>2. Imports et dépendances</h4>
+
+<p><strong>Points positifs :</strong></p>
+<ul>
+<li>Bibliothèques utilisées de manière cohérente.</li>
+</ul>
+
+<p><strong>Problèmes :</strong></p>
+<ul>
+<li>Imports répartis dans plusieurs cellules.</li>
+<li>Aucune gestion des versions.</li>
+<li>Aucun fichier <code>requirements.txt</code> ou équivalent visible.</li>
+</ul>
+
+<h4>3. Reproductibilité</h4>
+
+<p><strong>Niveau :</strong> moyen</p>
+
+<p><strong>Points favorables :</strong></p>
+<ul>
+<li>Lecture directe des fichiers source.</li>
+<li>Nettoyage explicite.</li>
+</ul>
+
+<p><strong>Points défavorables :</strong></p>
+<ul>
+<li>Historique d'exécution non propre.</li>
+<li>Absence de contrôle de versions des bibliothèques.</li>
+<li>Dépendance à l'état des objets modifiés par référence.</li>
+</ul>
+
+<h4>4. Risques de modification involontaire des DataFrames</h4>
+
+<p>Problème principal du notebook.</p>
+
+<p><strong>Cas observés :</strong></p>
+
+<pre><code>df_z = df_final
+</code></pre>
+
+<p>Puis :</p>
+
+<pre><code>df_z["z_score"] = ...
+</code></pre>
+
+<p>et</p>
+
+<pre><code>df_ca = df_final
+df_ca["ca_par_article"] = ...
+</code></pre>
+
+<p>Ces instructions modifient aussi <code>df_final</code>.</p>
+
+<h4>5. Contrôles qualité des données</h4>
+
+<p><strong>Points positifs :</strong></p>
+<ul>
+<li>Recherche des doublons.</li>
+<li>Vérification des clés.</li>
+<li>Contrôle des prix négatifs.</li>
+<li>Contrôle des stocks négatifs.</li>
+<li>Contrôle des SKU manquants.</li>
+<li>Contrôle des types.</li>
+</ul>
+
+<p><strong>Limites :</strong></p>
+<ul>
+<li>Peu de contrôles après fusion.</li>
+<li>Pas de validation systématique du nombre de lignes avant/après chaque traitement.</li>
+</ul>
+
+<h4>6. Clés et jointures</h4>
+
+<p><strong>Points positifs :</strong></p>
+<ul>
+<li>Vérification préalable de plusieurs clés.</li>
+<li>Nettoyage des identifiants.</li>
+</ul>
+
+<p><strong>Points faibles :</strong></p>
+<ul>
+<li>Aucun paramètre <code>validate=</code> dans les <code>merges</code>.</li>
+<li>Pas de test explicite de cardinalité 1:1.</li>
+<li>Pas de contrôle de duplication après fusion.</li>
+</ul>
+
+<h4>7. Calculs et traitement des anomalies</h4>
+
+<p><strong>Points positifs :</strong></p>
+<ul>
+<li>Utilisation de Z-score.</li>
+<li>Utilisation de l'IQR.</li>
+<li>Contrôles de cohérence stock/prix.</li>
+</ul>
+
+<p><strong>Points discutables :</strong></p>
+<ul>
+<li>Transformer un prix négatif via <code>abs()</code> peut masquer une erreur de saisie.</li>
+<li>Remplacer des stocks négatifs par 0 supprime l'information sur l'anomalie.</li>
+<li>L'article 4355 est neutralisé manuellement sans justification documentée.</li>
+</ul>
+
+<h4>8. Lisibilité du code</h4>
+
+<p><strong>Points positifs :</strong></p>
+<ul>
+<li>Nombreux commentaires.</li>
+<li>Nommage généralement clair.</li>
+</ul>
+
+<p><strong>Axes d'amélioration :</strong></p>
+<ul>
+<li>Commentaires parfois plus nombreux que nécessaires.</li>
+<li>Quelques DataFrames intermédiaires très proches (<code>df_z</code>, <code>df_ca</code>, <code>df_stock</code>, <code>df_marge</code>).</li>
+<li>Documentation Markdown limitée (4 cellules seulement).</li>
+</ul>
+
+<h4>9. Pertinence des graphiques</h4>
+
+<p><strong>Graphiques observés :</strong></p>
+<ul>
+<li>Boîte à moustaches.</li>
+<li>Histogramme.</li>
+<li>Top 20 CA.</li>
+<li>Top 20 quantités.</li>
+<li>Scatter CA/volume.</li>
+<li>Rotation de stock.</li>
+<li>Corrélations.</li>
+</ul>
+
+<p><strong>Analyse :</strong></p>
+<ul>
+<li>Les visualisations choisies sont adaptées aux objectifs.</li>
+<li>Je peux analyser leur code mais pas leur rendu.</li>
+<li>La heatmap complète puis triangulaire génère une redondance partielle.</li>
+</ul>
+
+<h4>10. Documentation Markdown et conclusions métier</h4>
+
+<p><strong>Constat :</strong></p>
+<ul>
+<li>Seulement 4 cellules Markdown documentaires.</li>
+<li>Les analyses métier sont principalement exprimées via des commentaires Python.</li>
+<li>Les conclusions finales sont limitées à des indicateurs chiffrés.</li>
+</ul>
+
+<p><strong>Amélioration :</strong></p>
+<ul>
+<li>Ajouter une synthèse métier structurée :
+  <ul>
+  <li>principaux produits contributeurs ;</li>
+  <li>analyse Pareto ;</li>
+  <li>risque stock ;</li>
+  <li>recommandations commerciales.</li>
+  </ul>
+</li>
+</ul>
+
+<hr>
+
+<h3>Les 3 corrections prioritaires</h3>
+
+<ol>
+<li>
+<p><strong>Éviter les modifications involontaires de <code>df_final</code></strong></p>
+<p>Occurrences :</p>
+<pre><code>df_z = df_final
+df_ca = df_final
+</code></pre>
+<p>Impact :</p>
+<ul>
+<li>Peut modifier silencieusement les données utilisées dans les analyses suivantes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Corriger l'export final</strong></p>
+<p>Actuellement :</p>
+<pre><code>df_analyse_final = df_marge.copy()
+df_final.to_excel("df_final.xlsx", index=False)
+</code></pre>
+<p>L'objet créé n'est pas exporté.</p>
+</li>
+<li>
+<p><strong>Sécuriser les jointures</strong></p>
+<p>Ajouter par exemple :</p>
+<pre><code>pd.merge(
+    df_erp,
+    df_liaison_clean,
+    on="product_id",
+    how="left",
+    validate="one_to_one"
+)
+</code></pre>
+</li>
+</ol>
+
+<hr>
+
+<h3>Exemple de code corrigé (problème principal)</h3>
+
+<p><strong>Version actuelle :</strong></p>
+
+<pre><code>df_z = df_final
+df_z["z_score"] = (
+    df_z["price"] - prix_moyen
+) / ecart_type_prix
+</code></pre>
+
+<p><strong>Version recommandée :</strong></p>
+
+<pre><code>df_z = df_final.copy()
+
+df_z["z_score"] = (
+    df_z["price"] - prix_moyen
+) / ecart_type_prix
+</code></pre>
+
+<p>Ainsi, l'ajout de <code>z_score</code> reste limité à <code>df_z</code> et ne modifie pas <code>df_final</code>.</p>
+
+<hr>
+
+<h3>Explication pour un data analyst débutant</h3>
+
+<p>Un DataFrame Pandas ne se copie pas automatiquement.</p>
+
+<p>Quand on écrit :</p>
+
+<pre><code>df_b = df_a
+</code></pre>
+
+<p>les deux variables pointent vers le même objet.</p>
+
+<p>Si ensuite on ajoute une colonne :</p>
+
+<pre><code>df_b["nouvelle_colonne"] = ...
+</code></pre>
+
+<p>la colonne apparaît aussi dans <code>df_a</code>.</p>
+
+<p>Pour créer une vraie copie indépendante, il faut écrire :</p>
+
+<pre><code>df_b = df_a.copy()
+</code></pre>
+
+<p>C'est une bonne pratique essentielle dans les notebooks d'analyse, car elle évite les effets de bord difficiles à détecter.</p>
+
+<hr>
+
+<h3>Limites de cette analyse</h3>
+
+<ul>
+<li>Basée uniquement sur le contenu de <code>notebook_reference_complet.txt</code>.</li>
+<li>Aucun code n'a été exécuté.</li>
+<li>Aucun fichier Excel n'était disponible.</li>
+<li>Aucun graphique n'a pu être visualisé.</li>
+<li>Les résultats numériques présents dans les commentaires ou sorties exportées n'ont pas été vérifiés.</li>
+<li>Les anomalies potentielles liées aux données réelles, aux jointures effectives ou aux performances restent à confirmer par exécution contrôlée.</li>
+</ul>
+
+<hr>
+
+<h2>Relances éventuelles</h2>
+
+<blockquote>
+<p>Pour chaque relance : numéro, heure, texte exact envoyé, réponse intégrale et durée.<br>
+Écrire « Aucune » si aucune relance.</p>
+</blockquote>
+
+<hr>
+
+<h2>Observations humaines</h2>
+
+<ul>
+<li>Réponse précise sur les constats qu’elle retient, avec des références correctes aux cellules.</li>
+<li>Confirmés : virgule manquante en cellule 32, alias de DataFrames, graphique stock/ventes, export final incomplet, hypothèse de TVA et limites de validation.</li>
+<li>Couverture partielle : absence de signalement sur les corrections destructives des prix et stocks, le calcul Pareto, la définition des mois de stock et le périmètre du « stock total ERP ».</li>
+<li>Résultat exploitable avec compléments. Score méthodologique provisoire : 3,3/4.</li>
+<li>Aucune correction proposée n’a été exécutée dans cette évaluation.</li>
+</ul>
+
+</body>
+</html>
