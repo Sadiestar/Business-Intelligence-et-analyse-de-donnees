@@ -30,5 +30,5 @@ L’IA accélère certaines tâches de revue et de documentation lorsqu’elle r
 
 - [Dossier du projet](./dossier_projet_data_augmente_IA.docx)
 - [Support de soutenance](./soutenance_projet_data_augmente_IA.pptx)
-- [Notebook Python_original_Projet_6](./notebook_bottleneck.ipynb)
-  ./Projet_06/notebook_bottleneck.ipynb
+- [Notebook Python_original_Projet_06](OpenClassrooms/Projet_06/notebook_bottleneck.ipynb)
+  
