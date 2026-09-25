@@ -44,4 +44,5 @@ Recommandations :
 - [Dossier du projet](./Documentation_Data_IA_augmenté.pdf)
 - [Support de soutenance](./soutenance_projet_data_augmente_IA.pptx)
 - [Notebook Python_original_Projet_06](../Projet_06/notebook_bottleneck.ipynb)
+- [Notebook amélioré](Notebook_042026_ameliore_IA_pedagogique.ipynb)
   
