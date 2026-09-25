@@ -41,7 +41,7 @@ Recommandations :
 
 ## Livrables
 
-- [Dossier du projet](./dossier_projet_data_augmente_IA.docx)
+- [Dossier du projet](./dDocumentation_Data_IA_augmenté.pdf)
 - [Support de soutenance](./soutenance_projet_data_augmente_IA.pptx)
 - [Notebook Python_original_Projet_06](../Projet_06/notebook_bottleneck.ipynb)
   
